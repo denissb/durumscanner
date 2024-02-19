@@ -1,0 +1,11 @@
+export const star1 = require("../../../../assets/app/1-star.png");
+export const star1_green = require("../../../../assets/app/1-star-green.png");
+export const star1_5 = require("../../../../assets/app/1.5-star.png");
+export const star1_5_geeen = require("../../../../assets/app/1.5-star-green.png");
+export const star_2 = require("../../../../assets/app/2-star.png");
+export const star_2_geeen = require("../../../../assets/app/2-star-green.png");
+export const star_2_5 = require("../../../../assets/app/2.5-star.png");
+export const star_2_5_geeen = require("../../../../assets/app/2.5-star-green.png");
+export const star_3 = require("../../../../assets/app/3-star.png");
+export const star_3_green = require("../../../../assets/app/3-star-green.png");
+export const star = require("../../../../assets/app/star.png");
