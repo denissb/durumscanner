@@ -1,7 +1,7 @@
 # DurumScanner
 
 A simple app for scanning a selected location for nearby tasty durum goodness.
-**iOS implementation is are not tested, web implementation is not finished**
+_iOS implementation is not tested, web implementation is not finished_
 
 <img src="screenshots/sample.jpg" width="360">
 
