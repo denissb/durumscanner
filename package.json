@@ -10,7 +10,8 @@
     "android:release": "npx expo run:android --variant release",
     "web": "expo start --web",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint:fix": "eslint ./src --fix",
+    "clean": "expo prebuild --clean"
   },
   "dependencies": {
     "@expo/webpack-config": "~19.0.1",
