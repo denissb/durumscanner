@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Image, Text } from "react-native";
+import { Image, Text, View } from "react-native";
 import { CalloutPressEvent, MapMarker, Marker } from "react-native-maps";
 
 import {
@@ -16,6 +16,7 @@ import {
   star_3_green,
 } from "./images";
 import { LocationObject } from "../../../hooks/useCurrentLocation";
+
 import type { Place } from "../../../hooks/useFindDurumPlaces";
 
 export enum Rating {
@@ -138,29 +139,33 @@ const Places = ({
           description={`Rating: ${place.rating || "unknown"} Open: ${isOpen(place?.opening_hours?.open_now)}`}
           onCalloutPress={onCalloutPress}
           tracksViewChanges={__DEV__}
-          icon={getIconImage(place)}
         >
-          {place?.opening_hours?.open_now === false && (
-            <Text
-              style={{ fontSize: 22, position: 'absolute', top: 2, left: 6 }}
-            >
-              🚫
-            </Text>
-          )}
-          {place?.opening_hours?.open_now === undefined && (
-            <Text
-              style={{
-                position: "absolute",
-                top: 2,
-                left: 16,
-                fontSize: 24,
-                fontWeight: "bold",
-                color: "$background",
-              }}
-            >
-              ?
-            </Text>
-          )}
+            <Image
+              source={getIconImage(place)}
+              style={{ width: 37, height: 37 }}
+              resizeMode="contain"
+            />
+            {place?.opening_hours?.open_now === false && (
+              <Text
+                style={{ fontSize: 22, position: 'absolute', top: 2, left: 6 }}
+              >
+                🚫
+              </Text>
+            )}
+            {place?.opening_hours?.open_now === undefined && (
+              <Text
+                style={{
+                  position: "absolute",
+                  top: 2,
+                  left: 16,
+                  fontSize: 24,
+                  fontWeight: "bold",
+                  color: "$background",
+                }}
+              >
+                ?
+              </Text>
+            )}
         </Marker>
       ))}
       {currentLocation && (
