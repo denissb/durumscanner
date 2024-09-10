@@ -20,10 +20,10 @@
         "expo-build-properties",
         {
           "ios": {
-            "newArchEnabled": false
+            "newArchEnabled": true
           },
           "android": {
-            "newArchEnabled": false
+            "newArchEnabled": true
           }
         }
       ]
@@ -32,7 +32,7 @@
       "bundleIdentifier": "com.durumscanner.pro",
       "supportsTablet": true,
       "config": {
-        "googleMapsApiKey": ""
+        "googleMapsApiKey": "AIzaSyBBTy4Bdh58U05b6sLYDsYLR6-jUAy9JwA"
       },
       "infoPlist": {
         "LSApplicationQueriesSchemes": [
@@ -68,7 +68,7 @@
       },
       "config": {
         "googleMaps": {
-          "apiKey": ""
+          "apiKey": "AIzaSyBBTy4Bdh58U05b6sLYDsYLR6-jUAy9JwA"
         }
       }
     },

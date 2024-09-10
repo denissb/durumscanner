@@ -16,6 +16,9 @@ web-build/
 *.key
 *.mobileprovision
 
+# New arch
+android/app/.cxx/
+
 # Metro
 .metro-health-check*
 
