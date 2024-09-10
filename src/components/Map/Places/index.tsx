@@ -137,15 +137,12 @@ const Places = ({
           onPress={() => onPlacePress(place)}
           description={`Rating: ${place.rating || "unknown"} Open: ${isOpen(place?.opening_hours?.open_now)}`}
           onCalloutPress={onCalloutPress}
+          tracksViewChanges={__DEV__}
+          icon={getIconImage(place)}
         >
-          <Image
-            source={getIconImage(place)}
-            style={{ width: 54, height: 54 }}
-            resizeMode="contain"
-          />
           {place?.opening_hours?.open_now === false && (
             <Text
-              style={{ position: "absolute", top: 2, left: 6, fontSize: 20 }}
+              style={{ fontSize: 22, position: 'absolute', top: 2, left: 6 }}
             >
               🚫
             </Text>
@@ -154,11 +151,11 @@ const Places = ({
             <Text
               style={{
                 position: "absolute",
-                top: 0,
-                left: 12,
+                top: 2,
+                left: 16,
                 fontSize: 24,
                 fontWeight: "bold",
-                color: "gray",
+                color: "$background",
               }}
             >
               ?
