@@ -138,12 +138,13 @@ const Places = ({
           onPress={() => onPlacePress(place)}
           description={`Rating: ${place.rating || "unknown"} Open: ${isOpen(place?.opening_hours?.open_now)}`}
           onCalloutPress={onCalloutPress}
-          tracksViewChanges={__DEV__}
+          tracksViewChanges={false}
         >
             <Image
               source={getIconImage(place)}
-              style={{ width: 37, height: 37 }}
+              style={{ width: 54, height: 54  }}
               resizeMode="contain"
+              onLoad={() => markerRefs.get(place.place_id)?.redraw()}
             />
             {place?.opening_hours?.open_now === false && (
               <Text

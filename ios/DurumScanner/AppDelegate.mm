@@ -12,9 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-// @generated begin react-native-maps-init - expo prebuild (DO NOT MODIFY) sync-0600be098e0a31fb15fc32c302b7eb12faba17c7
+// @generated begin react-native-maps-init - expo prebuild (DO NOT MODIFY) sync-f1d6a576109320b0f5980d35b6d166eb520f01e0
 #if __has_include(<GoogleMaps/GoogleMaps.h>)
-  [GMSServices provideAPIKey:@"AIzaSyDKJXW0m4ruOy4F83Xsa1Z0f6O5mMtQLQQ"];
+  [GMSServices provideAPIKey:@"AIzaSyBBTy4Bdh58U05b6sLYDsYLR6-jUAy9JwA"];
 #endif
 // @generated end react-native-maps-init
   self.moduleName = @"main";
@@ -28,10 +28,10 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
-  return [self getBundleURL];
+  return [self bundleURL];
 }
 
-- (NSURL *)getBundleURL
+- (NSURL *)bundleURL
 {
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@".expo/.virtual-metro-entry"];
